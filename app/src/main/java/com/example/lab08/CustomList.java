@@ -14,8 +14,17 @@ public class CustomList {
         cities.add(city);
     }
 
-    
+    // test CI
 
-    // Will be implemented later using TDD (leave blank for now)
-    // public boolean hasCity(City city) { ... }
+    public boolean hasCity(City city) {
+        return cities.contains(city);
+    }
+
+    public void deleteCity(City city) {
+        cities.remove(city);
+    }
+
+    public int getCount() {
+        return cities.size();
+    }
 }
